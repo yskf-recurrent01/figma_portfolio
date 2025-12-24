@@ -1,1 +1,206 @@
 @charset "UTF-8";
+
+/* カスタムプロパティ
+----------------------------------- */
+:root {
+    /* color */
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-green: #296A65;
+    --color-light-green: #2FAC9E;
+    --color-grey: #EEEEEE;
+}
+
+/* ベース
+----------------------------------- */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    color: var(--color-black);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* レイアウト
+----------------------------------- */
+.l-wrapper {
+    width: min(1028px, 92%);
+    margin-inline: auto;
+}
+
+.l-header {
+    height: 720px;
+
+    background-image: url(../img/mv.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+.l-header-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-inline: clamp(15px, 6.197px + 2.347vw, 40px);
+    padding-block: clamp(10px, 5.070px + 1.315vw, 24px);
+}
+
+.l-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.l-main {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(120px, 105.915px + 3.756vw, 160px);
+    padding-block-start: clamp(120px, 105.915px + 3.756vw, 160px);
+}
+
+.l-footer {
+    background-color: var(--color-green);
+    text-align: right;
+    padding-block: 10px;
+    padding-inline: clamp(20px, 12.958px + 1.878vw, 40px);
+}
+
+.l-service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-inline: 22.5px;
+}
+
+.l-works-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    gap: 64px;
+}
+
+/* コンポーネント
+----------------------------------- */
+/* 見出し */
+.c-site-title {
+    font-weight: bold;
+    font-size: 24px;
+    align-self: center;
+}
+
+.c-section-title {
+    color: var(--color-green);
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-section-title::before {
+    content: attr(data-sub-title);
+    font-size: clamp(32px, 26.366px + 1.502vw, 48px);
+    color: var(--color-black);
+}
+
+.c-section-title+* {
+    margin-block-start: 64px
+}
+
+
+/* ボタン */
+.c-btn {
+    display: inline-block;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border-radius: 50px;
+    padding: 10px 48px;
+}
+
+/* セクション */
+.c-section--bg {
+    padding-block: 80px;
+    background-color: var(--color-grey);
+}
+
+.c-btn--header {
+    font-size: clamp(14px, 13.296px + 0.188vw, 16px);
+    padding-block: clamp(8px, 7.296px + 0.188vw, 10px);
+    padding-inline: clamp(24px, 15.549px + 2.254vw, 48px);
+}
+
+
+.c-gnav ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.c-gnav ul li a {
+    font-size: clamp(14px, 13.296px + 0.188vw, 16px);
+}
+
+.c-copy {
+    color: var(--color-white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.c-copy__main {
+    font-size: clamp(48px, 42.366px + 1.502vw, 64px);
+}
+
+.c-copy__sub {
+    font-size: 14px;
+}
+
+/* サービス */
+.c-service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.c-service-card__img {
+    background-color: var(--color-green);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    padding: 26px;
+}
+
+.c-service-card__img img {
+    filter: brightness(0) invert();
+}
+
+.c-service-card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.c-service-card__title {
+    font-size: clamp(18px, 15.887px + 0.563vw, 24px);
+    font-weight: bold;
+}
+
+.c-service-card__desc {
+    font-size: 14px;
+}
+
+/* 制作実績 */
+
+
+/* コピーライト */
+.c-copyright {
+    color: var(--color-white);
+}

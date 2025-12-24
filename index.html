@@ -5,86 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nekota Koharu | Portfolio</title>
+    <!-- destyle.css (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.1/destyle.min.css">
+    <!-- Google Fonts (Noto Sans JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Original CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Nekota Koharu</h1>
-        <nav>
-            <ul>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-            <a href="#">Contact</a>
-        </nav>
-        <p>Nekota Koharu</p>
-        <p>東京都を拠点に活動するデザイナーです。<br>
-            グラフィックデザインとWebデザインが得意です。</p>
+    <header class="l-header">
+        <div class="l-header-inner">
+            <h1 class="c-site-title">Nekota Koharu</h1>
+            <div class="l-nav-wrapper">
+                <nav class="c-gnav">
+                    <ul>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+                <a class="c-btn c-btn--header" href="#">Contact</a>
+            </div>
+        </div>
+        <div class="c-copy">
+            <p class="c-copy__main">Nekota Koharu</p>
+            <p class="c-copy__sub">東京都を拠点に活動するデザイナーです。<br>
+                グラフィックデザインとWebデザインが得意です。</p>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>サービス</h2>
-            <ul>
-                <li>
-                    <img src="./img/icon-graphic.svg" alt="">
-                    <p>Graphic Design</p>
-                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                </li>
-                <li>
-                    <img src="./img/icon-web.svg" alt="">
-                    <p>Web Design</p>
-                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                </li>
-                <li>
-                    <img src="./img/icon-direction.svg" alt="">
-                    <p>Direction</p>
-                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                </li>
-            </ul>
+    <main class="l-main">
+        <section class="c-section">
+            <div class="l-wrapper">
+                <h2 class="c-section-title" data-sub-title="Service">サービス</h2>
+                <ul class="l-service-list">
+                    <li class="c-service-card">
+                        <div class="c-service-card__img">
+                            <img src="./img/icon-graphic.svg" alt="">
+                        </div>
+                        <div class="c-service-card__text">
+                            <p class="c-service-card__title">Graphic Design</p>
+                            <p class="c-service-card__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </p>
+                        </div>
+                    </li>
+                    <li class="c-service-card">
+                        <div class="c-service-card__img">
+                            <img src="./img/icon-web.svg" alt="">
+                        </div>
+                        <div class="c-service-card__text">
+                            <p class="c-service-card__title">Web Design</p>
+                            <p class="c-service-card__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </p>
+                        </div>
+                    </li>
+                    <li class="c-service-card">
+                        <div class="c-service-card__img">
+                            <img src="./img/icon-direction.svg" alt="">
+                        </div>
+                        <div class="c-service-card__text">
+                            <p class="c-service-card__title">Direction</p>
+                            <p class="c-service-card__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h2>制作実績</h2>
-            <ol>
-                <li><img src="./img/works-01.jpg" alt="">
-                    <p>プロジェクト名がはいります</p>
-                    <p>グラフィックデザイン</p>
-                </li>
-                <li><img src="./img/works-02.jpg" alt="">
-                    <p>プロジェクト名がはいります</p>
-                    <p>グラフィックデザイン</p>
-                </li>
-                <li><img src="./img/works-03.jpg" alt="">
-                    <p>プロジェクト名がはいります</p>
-                    <p>ウェブデザイン</p>
-                </li>
-                <li><img src="./img/works-04.jpg" alt="">
-                    <p>プロジェクト名がはいります</p>
-                    <p>グラフィックデザイン</p>
-                </li>
-                <li><img src="./img/works-05.jpg" alt="">
-                    <p>プロジェクト名がはいります</p>
-                    <p>UIデザイン</p>
-                </li>
-                <li><img src="./img/works-06.jpg" alt="">
-                    <p>プロジェクト名がはいります</p>
-                    <p>グラフィックデザイン</p>
-                </li>
-            </ol>
+        <section class="c-section">
+            <div class="l-wrapper">
+                <h2 class="c-section-title" data-sub-title="Works">制作実績</h2>
+                <ol class="l-works-list">
+                    <li class="c-works-card">
+                        <div class="c-works-card__img">
+                            <img src="./img/works-01.jpg" alt="">
+                        </div>
+                        <p class="c-works-card__title">プロジェクト名がはいります</p>
+                        <p class="c-works-card__cat">グラフィックデザイン</p>
+                    </li>
+                    <li class="c-works-card">
+                        <div class="c-works-card__img">
+                            <img src="./img/works-02.jpg" alt="">
+                        </div>
+                        <p class="c-works-card__title">プロジェクト名がはいります</p>
+                        <p class="c-works-card__cat">グラフィックデザイン</p>
+                    </li>
+                    <li class="c-works-card">
+                        <div class="c-works-card__img">
+                            <img src="./img/works-03.jpg" alt="">
+                        </div>
+                        <p class="c-works-card__title">プロジェクト名がはいります</p>
+                        <p class="c-works-card__cat">ウェブデザイン</p>
+                    </li>
+                    <li class="c-works-card">
+                        <div class="c-works-card__img">
+                            <img src="./img/works-04.jpg" alt="">
+                        </div>
+                        <p class="c-works-card__title">プロジェクト名がはいります</p>
+                        <p class="c-works-card__cat">グラフィックデザイン</p>
+                    </li>
+                    <li class="c-works-card">
+                        <div class="c-works-card__img">
+                            <img src="./img/works-05.jpg" alt="">
+                        </div>
+                        <p class="c-works-card__title">プロジェクト名がはいります</p>
+                        <p class="c-works-card__cat">UIデザイン</p>
+                    </li>
+                    <li class="c-works-card">
+                        <div class="c-works-card__img">
+                            <img src="./img/works-06.jpg" alt="">
+                        </div>
+                        <p class="c-works-card__title">プロジェクト名がはいります</p>
+                        <p class="c-works-card__cat">グラフィックデザイン</p>
+                    </li>
+                </ol>
+                <a href="#" class="c-btn">View More</a>
+            </div>
         </section>
-        <section>
-            <h2>私について</h2>
-            <img src="./img/profile.png" alt="Nekota Koharuのポートレート画像">
-            <p>Nekota Koharu</p>
-            <p>
-                東京都を拠点に活動するデザイナーです。
-                ウェブデザインとグラフィックデザインが得意です。猫が大好き！<br>
-                プロフィールテキスト入りますプロフィールテキスト入りますプロフィールテキスト入りますプロフィールテキスト入りますプロフィールテキスト入りますフィールテキスト入ります。
-            </p>
+        <section class="c-section c-section--bg">
+            <div class="l-wrapper">
+                <h2 class="c-section-title" data-sub-title="About">私について</h2>
+                <div class="c-about">
+                    <div class="c-about__img"><img src="./img/profile.png" alt="Nekota Koharuのポートレート画像"></div>
+                    <p class="c-about__name">Nekota Koharu</p>
+                    <p class="c-about__desc">
+                        東京都を拠点に活動するデザイナーです。
+                        ウェブデザインとグラフィックデザインが得意です。猫が大好き！<br>
+                        プロフィールテキスト入りますプロフィールテキスト入りますプロフィールテキスト入りますプロフィールテキスト入りますプロフィールテキスト入りますフィールテキスト入ります。
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <small>&copy; Nekota Koharu</small>
+    <footer class="l-footer">
+        <small class="c-copyright">&copy; Nekota Koharu</small>
     </footer>
 </body>
 
