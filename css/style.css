@@ -33,14 +33,14 @@ img {
 
 .l-header {
     height: 720px;
-
     background-image: url(../img/mv.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 130px;
+    gap: 130px; */
+    position: relative;
 }
 
 .l-header-inner {
@@ -160,6 +160,9 @@ img {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 33%;
 }
 
 .c-copy__main {
@@ -249,7 +252,7 @@ img {
 }
 
 @media screen and (min-width:768px){
-    .l-header-inner,.l-service-list,.c-about{
+    .l-service-list,.c-about{
         flex-direction: row;
     }
     .l-header-inner{
