@@ -78,11 +78,19 @@ img {
     padding-inline: 22.5px;
 }
 
+.l-works-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(4rem, 3.648rem + 1.502vw, 5rem);
+}
+
 .l-works-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     gap: 64px;
+    align-self: stretch;
 }
 
 /* コンポーネント
@@ -198,9 +206,64 @@ img {
 }
 
 /* 制作実績 */
+.c-works-card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.c-works-card__title{
+    font-size: 18px;
+    font-weight: bold;
 
+}
+.c-works-card__cat{
+    font-size: 14px;
+    background-color: var(--color-grey);
+    padding: 2px 8px;
+    text-align: center;
+    align-self: flex-start;
+    border-radius: 4px;
+}
+
+/* 私について */
+.c-about{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.c-about__img{
+    text-align: center;
+}
+.c-about__text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.c-about__name{
+    font-size: 24px;
+}
 
 /* コピーライト */
 .c-copyright {
     color: var(--color-white);
+}
+
+@media screen and (min-width:768px){
+    .l-header-inner,.l-service-list,.c-about{
+        flex-direction: row;
+    }
+    .l-header-inner{
+        justify-content: space-between;
+    }
+    .l-nav-wrapper{
+        gap: 48px;
+    }
+    .c-about{
+        max-width: 744px;
+        margin-inline:auto;
+    }
+    .c-about__img{
+        flex-basis: 200px;
+        flex-shrink: 0;
+    }
 }
